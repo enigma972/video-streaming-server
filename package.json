@@ -1,16 +1,25 @@
 {
   "name": "v-streaming",
   "version": "1.0.0",
+  "type": "module",
   "description": "Streaming Server",
   "main": "index.js",
   "repository": "https://github.com/enigma972/streaming-server",
   "author": "joel lusavuvu <lusavuvujoel39@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "koa": "^2.13.0"
+    "dotenv": "^8.2.0",
+    "koa": "^2.13.0",
+    "koa-jwt": "^4.0.0",
+    "loggerr": "^3.1.0"
   },
   "devDependencies": {
     "@types/koa": "^2.11.6",
+    "@types/koa-jwt": "^3.3.0",
     "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start-dev": "nodemon index.js",
+    "start": "node index.js"
   }
 }
