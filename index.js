@@ -32,7 +32,7 @@ app.use(({ request, response }, next) => {
 })
 
 app.use(jwt({
-	secret: 'secret',
+	secret: process.env.JWT_SECRET,
 	algorithms: ['HS256', 'HS512'],
 	getToken: ({ request }) => request.query.token
 }))
